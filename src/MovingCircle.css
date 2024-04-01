@@ -1,0 +1,61 @@
+.container { 
+  border-bottom: 120px solid #555;
+  border-left: 101px solid transparent;
+  border-right: 101px solid transparent;
+  width: 200px; /* Increased width to accommodate the circle */
+  position: relative;
+}
+
+
+.cylinder {
+  width: 320px; /* Adjust width as needed */
+  height: 96px; /* Adjust height as needed */
+  /* position: relative; */
+  perspective: 1000px;
+  background-color: red;
+}
+
+.bottom {
+  width: 320px; /* Adjust width as needed */
+  height: 96px; /* Adjust height as needed */
+  background-color: red; /* Adjust background color as needed */
+  border-radius: 0 0 0 0; /* Rounding out the bottom edges */
+}
+
+.cylinder2 {
+  width: 320px; /* Adjust width as needed */
+  height: 96px; /* Adjust height as needed */
+  /* position: relative; */
+  perspective: 1000px;
+  background-color: white
+}
+.grass {
+  width: 100%; /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+  background-color: #12de59; /* Adjust background color as needed */
+}
+
+.pole{
+  background-color: red;
+  width: 15px;
+  height: 40px;
+}
+.circle {
+  position:absolute;
+  top: calc(100% - -30px); /* Position the circle at the bottom of the container */
+  left: calc(50% - 40px); /* Position the circle at the center horizontally */
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255); /* Circle color */
+  animation: moveLeftRight 5s linear infinite;
+}
+
+@keyframes moveLeftRight {
+  0%, 100% {
+    left: 25px; /* Start position */
+  }
+  50% {
+    left: calc(100% - 105px); /* End position */
+  }
+}
